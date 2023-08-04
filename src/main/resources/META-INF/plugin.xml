@@ -9,16 +9,6 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.lamiamortis.laminaria.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <themeProvider id="com.github.lamia-mortis.laminaria" path="/theme/laminaria.theme.json"></themeProvider>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.lamiamortis.laminaria.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
-    
-    <actions>
-        <action class="com.github.lamiamortis.laminaria.MyAction" id="MyAction">
-            <add-to-group group-id="StructureViewPopupMenu" />
-        </action>
-    </actions>
 </idea-plugin>
