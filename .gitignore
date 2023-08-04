@@ -1,4 +1,6 @@
 .gradle
 .idea
 .qodana
-build
+!build/
+build/*
+!build/distributions
